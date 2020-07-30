@@ -27,7 +27,7 @@ $ docker run --name db1 -d --env-file=mydb.env mysql
 ## Wait for 2 mins
 ## Inside container, login into mysql db
 $ docker exec -it db1 mysql -umahendra -ppass12345 
-SQL> use sample;
+SQL> use sample1;
 SQL> show tables;
 ## Expect EMPTY SET
 SQL> create table emp ( empid int primary key, ename varchar(20));
@@ -41,7 +41,7 @@ $ docker rm db1
 $ docker run --name db1 --env-file=mydb.env -d mysql
 ## Inside container, login into mysql db
 $ docker exec -it db1 mysql -umahendra -ppass12345 
-SQL> use sample;
+SQL> use sample1;
 SQL> show tables;
 ## Expect EMPTY SET !!!
 ## The old database files are LOST!!
