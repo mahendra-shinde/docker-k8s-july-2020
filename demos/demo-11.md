@@ -9,7 +9,7 @@
 $ docker pull mysql
 ```
 
-3. Create a new ENV file "mydb.env"
+3. Create a new ENV file "mydb.env" [download](https://raw.githubusercontent.com/mahendra-shinde/docker-k8s-july-2020/master/demos/mydb.env)
 
 ```
 MYSQL_ROOT_PASSWORD=password@1234
