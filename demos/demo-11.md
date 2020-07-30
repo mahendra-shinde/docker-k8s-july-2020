@@ -20,7 +20,7 @@ MYSQL_USER=mahendra
 
 ## Without Volume
 
-1. Create the container without VOLUME
+Create the container without VOLUME
 
 ```
 $ docker run --name db1 -d --env-file=mydb.env mysql
@@ -48,9 +48,9 @@ SQL> show tables;
 SQL> exit
 ```
 
-## Without Volume
+## With Volume
 
-1. Create the container without VOLUME
+Create the container with VOLUME
 
 ```
 $ docker volume create db-data
