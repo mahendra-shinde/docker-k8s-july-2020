@@ -14,7 +14,15 @@ $ docker stop c1
 ## When used --rm, container would be auto-deleted on stop
 ```
 
-2. Creating a container with MULTIPLE envs from "env" file 
+2. Create the env file named "myvars.env"
+
+```ini
+AUTHOR=Mahendra Shinde
+VER=1.0
+Connection=tcp://xyz:1234
+```
+
+3. Creating a container with MULTIPLE envs from "env" file 
 
 ```
 $ docker run -d --rm --env-file myvars.env --name c1 mcr.microsoft.com/windows/servercore/iis

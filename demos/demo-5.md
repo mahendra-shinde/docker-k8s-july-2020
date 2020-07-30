@@ -34,7 +34,7 @@ $ docker network inspect nat
 
 ```
 $ docker exec -it c1 powershell
-$ iwr -UseBasicParsing localhost 
+$ iwr -UseBasicParsing http://localhost 
 $ exit
 ```
 
