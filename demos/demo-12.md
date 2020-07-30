@@ -1,6 +1,6 @@
 ## Imperative approch for building new image
 
-1. Create a new temporary container for MySQL Database, and copy SQL files.
+1. Create a new temporary container for MySQL Database, and copy [SQL files](https://github.com/mahendra-shinde/docker-k8s-july-2020/tree/master/demos/sql-files). for [env](https://raw.githubusercontent.com/mahendra-shinde/docker-k8s-july-2020/master/demos/mydb.env)
 
 ```
 $ docker run --name tempdb --env-file=mydb.env -d mysql
