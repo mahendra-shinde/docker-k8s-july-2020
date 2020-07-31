@@ -1,0 +1,13 @@
+## Ignore all files and directories EXCEPT "publish"
+bin/
+Controllers/
+Models/
+obj/
+Properties/
+Views/
+wwwroot/
+demo-15.csproj
+appsettings.json
+appsettings.Development.json
+demo-15.csproj
+Program.cs
