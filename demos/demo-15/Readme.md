@@ -31,7 +31,7 @@ CMD ["dotnet","demo-15.dll"]
 3.  Build and create a custom image
 
 ```
-$ docker build -t aspapp1 .
+$ docker build -t aspapp1 $PWD
 ```
 
 4.  Test Run Application image

@@ -1,0 +1,22 @@
+### YAML COMMENT
+## 1 KeyValue
+# Keys don't need Quotes, and cannot contain any space
+# Values COULD BE string, number, object or list
+name: "Mahendra Shinde"
+
+## Value of type number (int)
+age: 36
+
+# Object type Value
+tech: 
+  container-runtime: docker
+  orchestrator: kubernetes
+
+# Value is LIST type
+# List ELEMENT use "-" as prefix 
+# Ident may/may not be used
+languages:
+  - Java
+  - JS
+  - Python
+  - Go

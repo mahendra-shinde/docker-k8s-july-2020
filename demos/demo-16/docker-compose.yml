@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  app1:
+    image: nginx:alpine
+    restart: unless-stopped
+
+  app2:
+    image: busybox
+    command: sleep 5m 
+    depends_on:
+    - app1
+    
+
+
+
+
+
+
