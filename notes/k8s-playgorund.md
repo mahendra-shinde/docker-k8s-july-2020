@@ -14,3 +14,4 @@ kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/m
 kubectl taint nodes --all node.kubernetes.io/not-ready:NoSchedule-
 kubectl taint nodes --all node-role.kubernetes.io/master-
 
+kubectl describe pods
