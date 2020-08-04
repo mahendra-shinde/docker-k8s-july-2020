@@ -6,11 +6,12 @@
 * Containers inside PODS must not listen on same port
 * Containers inside POD can communicate with each other on "localhost"
 * PODS are USUALLY part of
-    - ReplicaSet
-    - StatefulSet
-    - Deployment
-    - CronJobs
-    - DaemonSet
+    - ReplicaSet    Group of Stateless Containers, provides Scaling & Self Healing
+    - StatefulSet   Group of Stateful Containers, provides Scaling & Self Healing
+    - Deployment    A Wrapper for ReplicaSet, provides RollingUpdate and Rollback
+    - CronJobs      Scheduled Jobs (Pods running some tasks)
+    - DaemonSet     A Special POD that need to run on EACH node, Number of PODs == Number of Nodes
+    
 * A Pod which is NOT Part of any other API Object is called static pod
 * Static Pods do not benefit from SCALING or SELF HEALING
 
