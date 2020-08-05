@@ -70,6 +70,8 @@ $ kubectl get nodes -o wide
 ## get INTERNAL-IP of One of the Nodes
 $ kubectl exec -it [PODNAME] sh
 $ curl http://myservice:8080
+## INCASE OF 'curl' not installed, use following command to install
+## apk --no-cache add curl
 $ curl http://[NODE-IP]:30001
 $ exit
 ```
