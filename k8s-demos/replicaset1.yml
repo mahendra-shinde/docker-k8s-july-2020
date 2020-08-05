@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+    name: myapp
+spec:
+    replicas: 5
+    selector:
+    ## Identify which PODS should be part of this Set
+        matchLabels:
+            name: myapp1
+    template: # Begining of POD Template
+        metadata:
+        ## define name of POD (Must MATCH with Line# 10 )
+            labels:
+                name: myapp1
+        spec:
+            nodeSelector:
+              kubernetes.io/hostname: aks-agentpool-30544588-vmss000000
+            containers:
+            -   image: mahendrshinde/myweb:latest
+                name: web
+                ports:
+                -   containerPort: 80
